@@ -1,0 +1,18 @@
+name = "fitness-gamification-platform"
+type = "pages"
+
+# Cloudflare Pages 配置
+# 使用 @cloudflare/next-on-pages 部署
+
+[deployment]
+# 构建命令
+command = "npm run build"
+
+# 输出目录
+# @cloudflare/next-on-pages 会自动处理输出
+
+# 环境变量（在 Cloudflare Dashboard 中配置）
+# [vars]
+# WAFFO_MERCHANT_ID = "your_merchant_id"
+# WAFFO_PRIVATE_KEY = "your_private_key"
+# NEXT_PUBLIC_APP_URL = "https://your-domain.pages.dev"
