@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions - Fitness Gamification Platform</title>
+    <meta name="description" content="Get answers to frequently asked questions about Fitness Gamification Platform. Learn about points system, achievements, leaderboards, and more.">
+    
+    <!-- JSON-LD Schema for FAQPage -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "1. How does the points system work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You earn points by completing workouts and challenges. Base points: 100 points per workout. Duration bonus: 1 point per minute. Calorie bonus: 0.5 points per calorie burned. Points are automatically calculated and added to your profile."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2. How do I unlock achievements (badges)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Achievements are automatically unlocked when you meet specific conditions: First Workout (Beginner), 7-day Streak (Persister), 50 Workouts (Enthusiast), 10 Daily Challenges (Challenger), 100km Running (Marathon Runner), 30-day Streak (Iron Man), Level 10 (Fitness Master), Top 3 on Leaderboard (Community Star)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "3. How is the leaderboard ranked?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The leaderboard is ranked by total points earned. It updates in real-time when users complete workouts or challenges. You can see your rank, points, badges count, and workouts completed. The top 3 users get special medals (🥇, 🥈, 🥉)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "4. What are daily/weekly/monthly challenges?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Challenges are special tasks that award bonus points. Daily challenges reset every day, weekly challenges reset every week, and monthly challenges reset every month. Completing challenges awards extra points on top of your workout points."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "5. How does the level system work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your level is calculated as: Floor(Total Points / 1000) + 1. For example, if you have 3750 points, your level is 5. Each level represents your progress and dedication. Higher levels unlock more recognition in the community."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "6. Can I track my workout history?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, every workout you log is recorded with details including workout type, duration, calories burned, points earned, and completion date. You can view your history to track progress over time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "7. Is my fitness data private?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, your fitness data is private and secure. We use encryption to protect your data. Your workout history and progress are only visible to you unless you choose to share your achievements on the leaderboard."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "8. How can I get customer support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Free users can access our FAQ and community forum. Pro users receive email support within 24 hours. Enterprise users get priority support with 4-hour response time. Contact us at support@fitnessgaming.com."
+      }
+    }
+  ]
+}
+    </script>
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: #f9fafb;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #111827;
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 10px;
+        }
+        .faq-item {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f3f4f6;
+            border-radius: 8px;
+        }
+        .faq-item h3 {
+            color: #1f2937;
+            margin-top: 0;
+        }
+        .answer-summary {
+            font-size: 1.1em;
+            color: #374151;
+            margin-bottom: 10px;
+        }
+        details {
+            margin-top: 10px;
+        }
+        summary {
+            cursor: pointer;
+            color: #3b82f6;
+            font-weight: 500;
+        }
+        .answer-details {
+            margin-top: 10px;
+            padding: 15px;
+            background: white;
+            border-radius: 4px;
+        }
+        .implemented {
+            background: #d1fae5;
+            padding: 10px;
+            border-left: 4px solid #10b981;
+            margin: 10px 0;
+            color: #065f46;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <p class="intro">Everything you need to know about Fitness Gamification Platform. Can't find the answer? <a href="./support.html">Contact our support team</a>.</p>
+        
+        <div class="implemented">
+            <strong>✅ All features are now implemented!</strong> Points system, achievement system, and leaderboard are fully functional.
+        </div>
+        
+        <div class="faq-list">
+            
+        <div class="faq-item">
+            <h3>1. How does the points system work?</h3>
+            <div class="answer">
+                <div class="implemented" style="margin: 10px 0;"><strong>✅ Status:</strong> Implemented</div>
+                <p class="answer-summary"><strong>Answer:</strong> You earn points by completing workouts and challenges. Base points: 100 points per workout. Duration bonus: 1 point per minute. Calorie bonus: 0.5 points per calorie burned. Points are automatically calculated and added to your profile.</p>
+                <details>
+                    <summary>Read detailed explanation</summary>
+                    <div class="answer-details">
+                        <p><strong>Points Calculation:</strong></p>
+                        <ul>
+                            <li><strong>Base Points:</strong> 100 points for each completed workout</li>
+                            <li><strong>Duration Bonus:</strong> 1 point per minute of workout (e.g., 30-minute workout = 30 bonus points)</li>
+                            <li><strong>Calorie Bonus:</strong> 0.5 points per calorie burned (e.g., 200 calories = 100 bonus points)</li>
+                            <li><strong>Challenge Bonus:</strong> Extra points for completing challenges (varies by challenge difficulty)</li>
+                        </ul>
+                        <p>Example: A 30-minute strength training workout that burns 200 calories would earn: 100 (base) + 30 (duration) + 100 (calories) = <strong>230 points total</strong>.</p>
+                        <p>Points are automatically added to your profile after each workout. You can track your points on your profile page and see your rank on the leaderboard.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <h3>2. How do I unlock achievements (badges)?</h3>
+            <div class="answer">
+                <div class="implemented" style="margin: 10px 0;"><strong>✅ Status:</strong> Implemented - Auto-unlock mechanism active</div>
+                <p class="answer-summary"><strong>Answer:</strong> Achievements are automatically unlocked when you meet specific conditions: First Workout (Beginner), 7-day Streak (Persister), 50 Workouts (Enthusiast), 10 Daily Challenges (Challenger), 100km Running (Marathon Runner), 30-day Streak (Iron Man), Level 10 (Fitness Master), Top 3 on Leaderboard (Community Star).</p>
+                <details>
+                    <summary>Read detailed explanation</summary>
+                    <div class="answer-details">
+                        <p><strong>Achievement Badges:</strong></p>
+                        <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                            <tr style="background: #f3f4f6;">
+                                <th style="padding: 8px; text-align: left; border: 1px solid #d1d5db;">Badge</th>
+                                <th style="padding: 8px; text-align: left; border: 1px solid #d1d5db;">Condition</th>
+                                <th style="padding: 8px; text-align: left; border: 1px solid #d1d5db;">Category</th>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">🌟 Beginner (Beginner)</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">Complete first workout</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">Beginner</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">🔥 Persister (Persister)</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">7-day streak</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">Beginner</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">💪 Fitness enthusiast (Enthusiast)</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">Complete 50 workouts</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">Intermediate</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">🎯 Challenger (Challenger)</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">Complete 10 daily challenges</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">Intermediate</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">🏃 Marathon runner (Marathon Runner)</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">Run 100km total</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">Advanced</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">🏆 Iron athlete (Iron Man)</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">30-day streak</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">Advanced</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">👑 Fitness master (Fitness Master)</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">Reach Level 10</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">Special</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">⭐ Community star (Community Star)</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">Top 3 on leaderboard</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">Special</td>
+                            </tr>
+                        </table>
+                        <p>Badges are automatically unlocked when conditions are met. You'll see a notification when you unlock a new badge!</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <h3>3. How is the leaderboard ranked?</h3>
+            <div class="answer">
+                <div class="implemented" style="margin: 10px 0;"><strong>✅ Status:</strong> Implemented - Real-time updates</div>
+                <p class="answer-summary"><strong>Answer:</strong> The leaderboard is ranked by total points earned. It updates in real-time when users complete workouts or challenges. You can see your rank, points, badges count, and workouts completed. The top 3 users get special medals (🥇, 🥈, 🥉).</p>
+                <details>
+                    <summary>Read detailed explanation</summary>
+                    <div class="answer-details">
+                        <p><strong>Leaderboard Features:</strong></p>
+                        <ul>
+                            <li><strong>Real-time Updates:</strong> Rankings update immediately after workouts or challenges</li>
+                            <li><strong>Points Ranking:</strong> Users are sorted by total points (highest to lowest)</li>
+                            <li><strong>Top 3 Medals:</strong> 🥇 (1st), 🥈 (2nd), 🥉 (3rd)</li>
+                            <li><strong>Your Position:</strong> Highlighted in blue with a "You" (You) label</li>
+                            <li><strong>Stats Displayed:</strong> Points, Badges Count, Workouts Completed</li>
+                        </ul>
+                        <p>To climb the leaderboard, complete more workouts, finish challenges, and maintain a daily streak!</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <h3>4. What are daily/weekly/monthly challenges?</h3>
+            <div class="answer">
+                <div class="implemented" style="margin: 10px 0;"><strong>✅ Status:</strong> Implemented</div>
+                <p class="answer-summary"><strong>Answer:</strong> Challenges are special tasks that award bonus points. Daily challenges reset every day, weekly challenges reset every week, and monthly challenges reset every month. Completing challenges awards extra points on top of your workout points.</p>
+                <details>
+                    <summary>Read detailed explanation</summary>
+                    <div class="answer-details">
+                        <p><strong>Challenge Types:</strong></p>
+                        <ul>
+                            <li><strong>📅 Daily Challenges:</strong> Reset at midnight. Usually easier (100-200 points).</li>
+                            <li><strong>📆 Weekly Challenges:</strong> Reset on Monday. Medium difficulty (300-600 points).</li>
+                            <li><strong>🗓️ Monthly Challenges:</strong> Reset on the 1st. Hardest (1000-2000 points).</li>
+                        </ul>
+                        <p><strong>Difficulty Levels:</strong></p>
+                        <ul>
+                            <li><span style="color: green;">●</span> <strong>Easy:</strong> Simple tasks, lower points</li>
+                            <li><span style="color: orange;">●</span> <strong>Medium:</strong> Moderate effort required</li>
+                            <li><span style="color: red;">●</span> <strong>Hard:</strong> Significant commitment, highest points</li>
+                        </ul>
+                        <p>Click "Log workouts" (Complete Training) on a challenge to mark it as completed and earn the bonus points!</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <h3>5. How does the level system work?</h3>
+            <div class="answer">
+                <div class="implemented" style="margin: 10px 0;"><strong>✅ Status:</strong> Implemented</div>
+                <p class="answer-summary"><strong>Answer:</strong> Your level is calculated as: Floor(Total Points / 1000) + 1. For example, if you have 3750 points, your level is 5. Each level represents your progress and dedication. Higher levels unlock more recognition in the community.</p>
+                <details>
+                    <summary>Read detailed explanation</summary>
+                    <div class="answer-details">
+                        <p><strong>Level Calculation:</strong></p>
+                        <pre style="background: #f3f4f6; padding: 10px; border-radius: 4px; overflow-x: auto;">
+Level = Floor(Total Points / 1000) + 1
+
+Examples:
+- 0-999 points → Level 1
+- 1000-1999 points → Level 2
+- 2000-2999 points → Level 3
+- 3000-3999 points → Level 4
+- 4000-4999 points → Level 5
+...
+- 9000-9999 points → Level 10 (Fitness Master badge!)
+                        </pre>
+                        <p><strong>Progress Bar:</strong> Your profile shows a progress bar indicating how close you are to the next level. The formula for the next level is: <code>(Current Level) * 1000 points</code>.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <h3>6. Can I track my workout history?</h3>
+            <div class="answer">
+                <div class="implemented" style="margin: 10px 0;"><strong>✅ Status:</strong> Implemented</div>
+                <p class="answer-summary"><strong>Answer:</strong> Yes, every workout you log is recorded with details including workout type, duration, calories burned, points earned, and completion date. You can view your history to track progress over time.</p>
+                <details>
+                    <summary>Read detailed explanation</summary>
+                    <div class="answer-details">
+                        <p><strong>Workout Logging:</strong></p>
+                        <p>Use the "Log Workout" buttons on the home page to quickly log:</p>
+                        <ul>
+                            <li>💪 Strength Training (30 min)</li>
+                            <li>🏃 Running (20 min)</li>
+                            <li>🧘 Yoga (40 min)</li>
+                        </ul>
+                        <p><strong>Workout History Includes:</strong></p>
+                        <ul>
+                            <li>Workout type</li>
+                            <li>Duration (minutes)</li>
+                            <li>Calories burned</li>
+                            <li>Points earned</li>
+                            <li>Completion date/time</li>
+                        </ul>
+                        <p>Your workout history helps track progress and unlocks achievements (e.g., "Complete 50 workouts" badge).</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <h3>7. Is my fitness data private?</h3>
+            <div class="answer">
+                <div class="implemented" style="margin: 10px 0;"><strong>✅ Status:</strong> Implemented - Privacy protected</div>
+                <p class="answer-summary"><strong>Answer:</strong> Yes, your fitness data is private and secure. We use encryption to protect your data. Your workout history and progress are only visible to you unless you choose to share your achievements on the leaderboard.</p>
+                <details>
+                    <summary>Read detailed explanation</summary>
+                    <div class="answer-details">
+                        <p><strong>Privacy Features:</strong></p>
+                        <ul>
+                            <li><strong>Data Encryption:</strong> All data is encrypted in transit and at rest</li>
+                            <li><strong>Private by Default:</strong> Your workout history is only visible to you</li>
+                            <li><strong>Leaderboard Opt-in:</strong> Only your total points and badges count are shown on the leaderboard (no detailed workout history)</li>
+                            <li><strong>No Data Sharing:</strong> We don't share your data with third parties</li>
+                        </ul>
+                        <p>Your privacy is our priority. You control what information is displayed publicly.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <h3>8. How can I get customer support?</h3>
+            <div class="answer">
+                <div class="implemented" style="margin: 10px 0;"><strong>✅ Status:</strong> Implemented</div>
+                <p class="answer-summary"><strong>Answer:</strong> Free users can access our FAQ and community forum. Pro users receive email support within 24 hours. Enterprise users get priority support with 4-hour response time. Contact us at support@fitnessgaming.com.</p>
+                <details>
+                    <summary>Read detailed explanation</summary>
+                    <div class="answer-details">
+                        <p><strong>Support Options:</strong></p>
+                        <ul>
+                            <li><strong>FAQ:</strong> This page! Find answers to common questions.</li>
+                            <li><strong>Email Support:</strong> support@fitnessgaming.com</li>
+                            <li><strong>Community Forum:</strong> Coming soon... (Join our community to discuss features and get help)</li>
+                            <li><strong>Feature Requests:</strong> Coming soon... (Submit ideas for new features)</li>
+                        </ul>
+                        <p><strong>Response Times:</strong></p>
+                        <ul>
+                            <li><strong>Free Users:</strong> Community forum access</li>
+                            <li><strong>Pro Users:</strong> Email support within 24 hours</li>
+                            <li><strong>Enterprise Users:</strong> Priority support within 4 hours</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+</body>
+</html>
